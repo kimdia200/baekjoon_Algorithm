@@ -1,0 +1,18 @@
+package _1;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int a,b;
+		do{
+			a=input.nextInt();
+			b=input.nextInt();
+		}while((0<a&&a<10&&0<b&&b<10)==false);
+		
+	}
+
+}
