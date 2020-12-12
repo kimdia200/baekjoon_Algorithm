@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;_2&apos; to &apos;_2_IF&apos;&#x0D;&#x0A;- Original project: &apos;Step&apos;&#x0D;&#x0A;- Original element: &apos;Step/src/_2&apos;&#x0D;&#x0A;- Renamed element: &apos;Step/src/_2_IF&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;_2&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;_2" name="_2_IF" qualified="false" references="true" stamp="1607780321809" textual="false" version="1.0"/>
+</session>
