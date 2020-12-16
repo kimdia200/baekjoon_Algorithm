@@ -1,0 +1,34 @@
+package _3_For;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class _4 {
+
+	public static void main(String[] args) throws Exception {
+		
+		_4 t = new _4();
+		t.test();
+	}
+	public void test() throws Exception {
+		int a,b;
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("두개의 정수를 입력해주세요 : ");
+		
+        // StringTokenizer 객체 선언
+        StringTokenizer st = null;
+        String temp = bf.readLine();
+        int n = temp.length();
+ 
+        // "1 3 5 7" 식으로 공란 포함 String Line일시 StringTokenizer 이용
+        int[] arrays = new int[n];
+        st = new StringTokenizer(bf.readLine());
+        for (int i = 0; i < n; i++) {
+            // 배열에다 토큰을 하나씩 불러서 입력해줌
+            arrays[i] = Integer.parseInt(st.nextToken());
+        }
+        System.out.println(arrays);
+	}
+
+}
