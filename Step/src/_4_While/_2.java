@@ -30,15 +30,19 @@ public class _2 {
 		input = sc.nextInt();
 		
 		int count=0;
-		while(sum!=input) {
-			if(sum<10)
-				sum*=10;
+		sum=input;
+		System.out.println(sum);
+		if(input<10)
+			sum=input*10;
+		else
+			sum=input;
+		do{
 			front = sum/10;
 			back = sum%10;
 			sum=back*10 + (front+back)%10;
-			System.out.println(front+"+"+back +"="+(front+back)+"이다. 새로운 수는"+sum+"이다. ");
+			System.out.print(front+"+"+back +"="+(front+back)+"이다. 새로운 수는 "+sum+"이다. ");
 			count++;
-		}
+		}while(input!=sum);
 		System.out.println(count);
 		
 	
