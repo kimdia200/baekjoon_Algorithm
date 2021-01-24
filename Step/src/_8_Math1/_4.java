@@ -12,15 +12,21 @@ public class _4 {
 		
 		int a = sc.nextInt();
 		int b = sc.nextInt();
-		int c = sc.nextInt();
+		int v = sc.nextInt();
 		
 		
 		int day = 1;
 		
 		while(true) {
-			
-			
+			v-=a;
+			if(v<=0)
+				break;
+			else {
+				v+=b;
+				day++;
+			}	
 		}
+		System.out.println(day+"일 걸립니다.");
 		
 	}
 }
