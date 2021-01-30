@@ -1,5 +1,5 @@
 package _1;
-//√‚√≥ : https://www.acmicpc.net/problem/10869
+//Ï∂úÏ≤ò : https://www.acmicpc.net/problem/10869
 import java.util.Scanner;
 
 public class _10 {
