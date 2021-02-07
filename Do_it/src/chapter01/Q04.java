@@ -11,6 +11,7 @@ public class Q04 {
 		int c = sc.nextInt();
 		
 		System.out.println(mid(a,b,c));
+		System.out.println(midYS(a,b,c));
 		
 		
 	}
@@ -34,4 +35,25 @@ public class Q04 {
 			return b;
 	}
 	
+	static int midYS(int a, int b, int c) {
+		int max = a;
+		int min = a;
+		
+		if(max<b)
+			max=b;
+		if(max<c)
+			max=c;
+		
+		if(min>b)
+			min=b;
+		if(min>c)
+			min=c;
+		
+		if(!(a==max || a==min))
+			return a;
+		else if(!(b==max || b==min))
+			return b;
+		else
+			return c;
+	}
 }
