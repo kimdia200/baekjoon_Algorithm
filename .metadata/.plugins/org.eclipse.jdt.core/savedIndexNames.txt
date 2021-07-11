@@ -1,23 +1,5 @@
 INDEX VERSION 1.131+C:\Users\kimYS\Desktop\Git\baekJoon\.metadata\.plugins\org.eclipse.jdt.core
-737402912.index
-2059199223.index
-431913961.index
-4167745634.index
-1720570584.index
-748581495.index
-3384863485.index
-3513588900.index
-78366250.index
 2148498613.index
 469372242.index
-526373379.index
-1253120659.index
-752072988.index
-1220685188.index
-3017744518.index
-2773128334.index
-4277002233.index
-1080652035.index
+2059785805.index
 4178467785.index
-2053577283.index
-625832295.index
