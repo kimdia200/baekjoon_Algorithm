@@ -1,9 +1,5 @@
 package level01;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 public class No_05 {
 	public static void main(String[] args) {
 		No_05 nn = new No_05();
@@ -17,34 +13,32 @@ public class No_05 {
 	public int solution(int n, int[] lost, int[] reserve) {
         int answer = 0;
         
-        answer = n - lost.length;
-        
-        List<Integer> lostList = new ArrayList<Integer>();
+        int[] arr = new int[n];
         
         for(int x : lost) {
-        	lostList.add(x);
+        	arr[x-1]--;
         }
-        
-        List<Integer> reserveList = new ArrayList<Integer>();
         
         for(int x : reserve) {
-        	reserveList.add(x);
+        	arr[x-1]++;
         }
         
-        Iterator<Integer> it = lostList.iterator();
-        while(it.hasNext()) {
-        	int x = it.next();
-        	if(reserveList.contains(x-1)) {
-        		int idx = reserveList.indexOf(x-1);
-        		answer++;
-        		reserveList.remove(idx);
-        	}else if(reserveList.contains(x+1)) {
-        		int idx = reserveList.indexOf(x+1);
-        		answer++;
-        		reserveList.remove(idx);
+        for(int i=0; i<arr.length; i++) {
+        	if(arr[i]>=0) continue;
+        	
+        	if(i!=0 && arr[i-1]==1) {
+        		arr[i-1]--;
+        		arr[i]++;
+        	}else if(i!=arr.length-1 && arr[i+1]==1) {
+        		arr[i+1]--;
+        		arr[i]++;
         	}
         }
         
+        for(int x : arr) {
+        	if(x>=0)
+        		answer++;
+        }
         return answer;
     }
 }
