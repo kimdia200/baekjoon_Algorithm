@@ -1,5 +1,10 @@
 package level01;
-
+/**
+ * https://programmers.co.kr/learn/courses/30/lessons/42862
+ * 
+ * 그리디 알고리즘 문제
+ *
+ */
 public class No_05 {
 	public static void main(String[] args) {
 		No_05 nn = new No_05();
