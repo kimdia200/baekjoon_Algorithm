@@ -2,6 +2,8 @@ package level01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -54,4 +56,38 @@ public class No_16 {
         }
         return answer;
     }
+	
+	//인터넷에서 찾아본 문제... 생각하는거 대박...
+	public String[] solution2(String[] strings, int n) {
+        String[] answer = new String[strings.length];
+        
+        // ArrayList 사용
+        ArrayList<String> array = new ArrayList<String>();
+            
+        for (int i=0; i<strings.length; i++) {
+            array.add(strings[i].charAt(n) + strings[i]);
+        }
+        
+        Collections.sort(array);
+        
+        for (int i=0; i<array.size(); i++) {
+            answer[i] = array.get(i).substring(1);
+        }
+        
+        return answer;
+    }
+	
+	//Comparator 재정의하는 방법... 이게 제일 정석인것같긴함
+	public String[] solution3(String[] strings, int n) {
+	      Arrays.sort(strings, new Comparator<String>(){
+	          @Override
+	          public int compare(String s1, String s2){
+	              if(s1.charAt(n) > s2.charAt(n)) return 1;
+	              else if(s1.charAt(n) == s2.charAt(n)) return s1.compareTo(s2);
+	              else if(s1.charAt(n) < s2.charAt(n)) return -1;
+	              else return 0;
+	          }
+	      });
+	      return strings;
+	  }
 }
