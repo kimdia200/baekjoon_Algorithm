@@ -9,8 +9,39 @@ import java.util.Scanner;
 //input : a#b!GE*T@S
 //output : S#T!EG*b@a
 
-public class Main {
+public class _05 {
 	public static void main(String[] args) {
+		solution2();
+	}
+	
+	//강사님이 풀이한것
+	public static void solution2() {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		char[] arr = str.toCharArray();
+		
+		int lt = 0;
+		int rt = arr.length-1;
+		
+		while(lt<rt) {
+			if(!Character.isAlphabetic(arr[lt])) lt++;
+			else if(!Character.isAlphabetic(arr[rt])) rt--;
+			else {
+				char temp = arr[lt];
+				arr[lt] = arr[rt];
+				arr[rt] = temp;
+				lt++;
+				rt--;
+			}
+		}
+		for(char c : arr) {
+			System.out.print(c);
+		}
+	}
+	
+	
+	//내가 풀이한것
+	public static void solution1() {
 		Scanner sc = new Scanner(System.in);
 		
 		char[] arr = sc.nextLine().toCharArray();
