@@ -44,25 +44,25 @@
 		</section>
 	</section>
 	<section name="org.eclipse.text.quicksearch.internal.ui.QuickSearchDialog.DIALOG_SETTINGS">
-		<item key="LAST_QUERY" value="두개"/>
+		<item key="LAST_QUERY" value="소수"/>
 		<item key="PATH_FILTER" value=""/>
 		<item key="CASE_SENSITIVE" value="true"/>
 		<item key="KEEP_OPEN" value="false"/>
 		<list key="COLUMN_WIDTHS">
 			<item value="40"/>
 			<item value="400"/>
-			<item value="82"/>
+			<item value="608"/>
 		</list>
 		<list key="SASH_WEIGHTS">
 			<item value="714"/>
 			<item value="285"/>
 		</list>
 		<section name="DialogBoundsSettings">
-			<item key="DIALOG_HEIGHT" value="500"/>
-			<item key="DIALOG_WIDTH" value="600"/>
-			<item key="DIALOG_X_ORIGIN" value="671"/>
+			<item key="DIALOG_HEIGHT" value="657"/>
+			<item key="DIALOG_WIDTH" value="1092"/>
+			<item key="DIALOG_X_ORIGIN" value="382"/>
 			<item key="DIALOG_Y_ORIGIN" value="188"/>
-			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 		</section>
 	</section>
 </section>
