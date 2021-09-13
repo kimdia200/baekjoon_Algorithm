@@ -1,4 +1,4 @@
-package Step02;
+package Step03;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 //공통원소구하기
-public class _14 {
+public class _02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();

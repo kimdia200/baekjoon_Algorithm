@@ -1,11 +1,11 @@
-package Step02;
+package Step03;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 //두 배열 합치기
-public class _13 {
+public class _01 {
 //	public static void main(String[] args) {
 //		Scanner sc = new Scanner(System.in);
 //		int n = sc.nextInt();
