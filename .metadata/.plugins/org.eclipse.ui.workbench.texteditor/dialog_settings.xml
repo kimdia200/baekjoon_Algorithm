@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="}"/>
+		<item key="selection" value="{"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="]"/>
+			<item value="if(arr[Math.min(p1.getX(), p2.getX())+1].charAt(p1.getY())!=&apos;X&apos;) {"/>
 			<item value="["/>
+			<item value="]"/>
 			<item value="[[100,90,98,88,65],[50,45,99,85,77],[47,88,95,80,67],[61,57,100,80,65],[24,90,94,75,65]]"/>
 			<item value="50"/>
 			<item value="intLocation"/>
@@ -18,8 +19,8 @@
 			<item value="println"/>
 		</list>
 		<list key="replacehistory">
-			<item value="}"/>
 			<item value="{"/>
+			<item value="}"/>
 			<item value="list"/>
 			<item value="x"/>
 		</list>
