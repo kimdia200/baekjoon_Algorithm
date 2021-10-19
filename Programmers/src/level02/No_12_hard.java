@@ -4,47 +4,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class No_12 {
+// 2021 카카오 채용연계형 인턴십 = 거리두기 확인하기
+public class No_12_hard {
 	public static void main(String[] args) {
-		String[][] places = {
-				{
-					"POOOP", 
-					"OXXOX", 
-					"OPXPX", 
-					"OOXOX", 
-					"POXXP"}, 
-				{
-					"POOPX", 
-					"OXPXP", 
-					"PXXXO", 
-					"OXXXO", 
-					"OOOPP"}, 
-				{
-					"PXOPX", 
-					"OXOXP", 
-					"OXPOX", 
-					"OXXOP", //0 3  14    03    /0 4 / 13
-					"PXPOX"}, 
-				{
-					"OOOXX", 
-					"XOOOX", 
-					"OOOXX", 
-					"OXOOX", 
-					"OOOOO"}, 
-				{
-					"PXPXP", 
-					"XPXPX", 
-					"PXPXP", 
-					"XPXPX", 
-					"PXPXP"}};
-		System.out.println(Arrays.toString(new No_12().solution(places)));
+		String[][] places = { { "POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP" },
+				{ "POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP" }, { "PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX" },
+				{ "OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO" }, { "PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP" } };
+		System.out.println(Arrays.toString(new No_12_hard().solution(places)));
 	}
 	
 	public int[] solution(String[][] places) {
         int[] answer = new int[places.length];
         
         for(int i=0; i<places.length; i++) {
-        	System.out.println("==========="+i+"========");
         	answer[i] = check(places[i]);
         }
         return answer;
@@ -67,23 +39,31 @@ public class No_12 {
 				int distance = Math.abs(p1.getX()-p2.getX())+Math.abs(p1.getY()-p2.getY());
 				if(distance==1) return 0;
 				if(distance<=2) {
+					int minX = Math.min(p1.getX(), p2.getX());
+					int minY = Math.min(p1.getY(), p2.getY());
+					int maxX = Math.max(p1.getX(), p2.getX());
+					int maxY = Math.max(p1.getY(), p2.getY());
 					if(p1.getX()==p2.getX()) {
-						if(arr[p1.getX()].charAt(Math.min(p1.getY(), p2.getY())+1)!='X') {
+						if(arr[p1.getX()].charAt(minY+1)!='X') {
 							return 0;
 						}
 					}else if(p1.getY()==p2.getY()) {
-						if (arr[Math.min(p1.getX(), p2.getX()) + 1].charAt(p1.getY()) != 'X') {
+						if (arr[minX+1].charAt(p1.getY()) != 'X') {
 							return 0;
 						}
 					}else {
-						//00 11 01 10      
-							//우하향= minmax   maxmin
-						//11 20 10 21		
-							//우상향 = minmin maxmax
 						if(p1.getY()<p2.getY()) {
-							if (arr[p1.getX()].charAt(p2.getY()) != 'X') {
+							if (arr[minX].charAt(maxY) != 'X') {
 								return 0;
-							}else if(arr[p2.getX()].charAt(p1.getY())!='X'){
+							}
+							if(arr[maxX].charAt(minY)!='X'){
+								return 0;
+							}
+						}else {
+							if(arr[minX].charAt(minY)!='X') {
+								return 0;
+							}
+							if(arr[maxX].charAt(maxY)!='X') {
 								return 0;
 							}
 						}
