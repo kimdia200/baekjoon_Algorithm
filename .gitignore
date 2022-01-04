@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/eclipse,windows,macos,intellij,web
-# Edit at https://www.toptal.com/developers/gitignore?templates=eclipse,windows,macos,intellij,web
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,eclipse,intellij
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,eclipse,intellij
 
 ### Eclipse ###
 .metadata
@@ -203,21 +203,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Web ###
-*.asp
-*.cer
-*.csr
-*.css
-*.htm
-*.html
-*.js
-*.jsp
-*.php
-*.rss
-*.wasm
-*.wat
-*.xhtml
-
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -244,4 +229,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/eclipse,windows,macos,intellij,web
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,eclipse,intellij
