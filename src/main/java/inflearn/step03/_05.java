@@ -9,7 +9,7 @@ public class _05 {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		
-		new _05().solution(n);
+		new _05().solution2(n);
 	}
 	//³»°¡Ç¬°Å
 	public void solution0 (int n) {
@@ -47,5 +47,24 @@ public class _05 {
 			}
 		}
 		System.out.println(answer);
+	}
+
+	//»ùÀÌÇ¬°Å
+	public void solution2(int n) {
+		int loop = n/2+1;
+		int lt = 1;
+		int rt = 1;
+		int sum = 0;
+		int cnt = 0;
+		while (rt<=loop) {
+			sum+=rt;
+			if(sum==n) cnt++;
+			while(sum>n){
+				sum-=lt++;
+				if(sum==n) cnt++;
+			}
+			rt++;
+		}
+		System.out.println(cnt);
 	}
 }

@@ -16,16 +16,16 @@ public class _04 {
 		}
 		
 		int cnt = 0;
-		for(int i=0; i<arr.length; i++) {
-			int sum = 0;
-			for(int j=i; j<arr.length; j++) {
-				sum+=arr[j];
-				if(sum==m) {
-					cnt++;
-					break;
-				}else if(sum>m) {
-					break;
-				}
+		int sum = 0;
+		int lt=0;
+		for(int rt=0; rt<arr.length; rt++){
+			sum+=arr[rt];
+			if(sum==m){
+				cnt++;
+			}
+			while(sum>=m){
+				sum-=arr[lt++];
+				if(sum==m) cnt++;
 			}
 		}
 		System.out.println(cnt);
