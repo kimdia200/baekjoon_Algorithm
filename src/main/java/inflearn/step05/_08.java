@@ -1,9 +1,6 @@
 package inflearn.step05;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 //¿¿±ﬁΩ«
 public class _08 {
@@ -18,29 +15,26 @@ public class _08 {
 			arr[i] = sc.nextInt();
 		}
 		
-		System.out.println(new _08().solution(n,m,arr));
+		System.out.println(new _08().solution(m,arr));
 	}
 	
-	public int solution(int n, int m, int[] arr) {
+	public int solution(int target, int[] arr) {
 		int answer=0;
-		
+
+		PriorityQueue<Integer> q = new PriorityQueue<>(Comparator.reverseOrder());
 		List<Integer> list = new ArrayList<>();
-		List<Integer> sort = new ArrayList<>();
-		for(int x : arr) {
+		for(int x : arr){
+			q.offer(x);
 			list.add(x);
-			sort.add(x);
 		}
-		sort.sort(Collections.reverseOrder());
-		
-		int target = m;
-		
-		while(target>=0) {
-			int get = list.remove(0);
-			if(get != sort.get(0)) {
-				list.add(get);
-				if(target==0) target = list.size();
-			}else {
-				sort.remove(0);
+
+		while(target>=0){
+			Integer now = list.remove(0);
+			if(now!=q.peek()){
+				list.add(now);
+				if(target==0) target=list.size();
+			}else{
+				q.poll();
 				answer++;
 			}
 			target--;

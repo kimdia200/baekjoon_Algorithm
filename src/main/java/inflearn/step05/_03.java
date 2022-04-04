@@ -1,8 +1,6 @@
 package inflearn.step05;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 //≈©∑π¿ŒªÃ±‚
 public class _03 {
@@ -22,10 +20,38 @@ public class _03 {
 			moves[i] = sc.nextInt();
 		}
 		
-		System.out.println(new _03().solution(n, base, m, moves));
+		System.out.println(new _03().solution(base, moves));
+	}
+	private int solution(int[][] base, int[] moves) {
+		int answer = 0;
+		Stack<Integer> basket = new Stack<>();
+		for(int move : moves){
+			int doll = pickUp(move, base);
+			if(doll==0) continue;
+			if(!basket.isEmpty() && basket.peek()==doll){
+				basket.pop();
+				answer+=2;
+			}else{
+				basket.push(doll);
+			}
+		}
+		return answer;
+	}
+	private int pickUp(int move, int[][] base){
+		int result = 0;
+		for(int i=0; i<base.length; i++){
+			int target = base[i][move-1];
+			if(target!=0){
+				result=target;
+				base[i][move-1]=0;
+				break;
+			}
+		}
+		System.out.println(result);
+		return result;
 	}
 
-	private int solution(int n, int[][] base, int m, int[] moves) {
+	private int solution2(int[][] base, int[] moves) {
 		List<Integer> list = new ArrayList<>();
 		int cnt = 0;
 		for(int input : moves) {
