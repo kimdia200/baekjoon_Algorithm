@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Arrays;
 
 //※ 버블정렬 
 //가장 큰수를 하나씩 뒤로 보내는 방법
@@ -27,9 +26,9 @@ public class _02_Bubble_Sort {
 			//6
 			//13 5 11 7 23 15
 
-			//선택정렬
+			//버블정렬
 			for(int i=0; i<arr.length-1; i++){
-				for(int j=0; j<size-i-1; j++){
+				for(int j=0; j<arr.length-i-1; j++){
 					if(arr[j]>arr[j+1]) {
 						int tmp = arr[j];
 						arr[j] = arr[j+1];
