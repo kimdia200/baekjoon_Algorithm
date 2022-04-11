@@ -1,8 +1,8 @@
-package inflearn.step08;
+package inflearn.step07;
 
 import java.util.*;
 
-public class _01_BFS {
+public class _08_BFS {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
