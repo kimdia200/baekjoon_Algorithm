@@ -1,4 +1,4 @@
-package inflearn.step07;
+package inflearn.step07_DFS_BFS;
 
 public class _02 {
     //이진수로 변환 하여 출력하기

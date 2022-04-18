@@ -1,4 +1,4 @@
-package inflearn.step07;
+package inflearn.step07_DFS_BFS;
 
 public class _03 {
     //ÆÑÅä¸®¾ó

@@ -1,4 +1,4 @@
-package inflearn.step08;
+package inflearn.step08_DFS_BFS_hard;
 
 import java.util.*;
 
