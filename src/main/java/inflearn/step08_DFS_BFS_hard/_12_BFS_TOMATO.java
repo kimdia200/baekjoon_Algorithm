@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class _11_BFS_TOMATO {
+public class _12_BFS_TOMATO {
     static int[] moveN = {-1,1,0,0};
     static int[] moveM = {0,0,-1,1};
 

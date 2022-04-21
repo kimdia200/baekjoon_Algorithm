@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class _10_BFS_길찾기 {
+public class _11_BFS_길찾기 {
     static int[] moveX = {0,0,-1,1};
     static int[] moveY = {-1,1,0,0};
 

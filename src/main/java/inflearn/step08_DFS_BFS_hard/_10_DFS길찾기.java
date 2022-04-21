@@ -2,7 +2,7 @@ package inflearn.step08_DFS_BFS_hard;
 
 import java.util.Scanner;
 
-public class _09_DFS길찾기 {
+public class _10_DFS길찾기 {
     static int[] moveX = {0,0,-1,1};
     static int[] moveY = {-1,1,0,0};
 
