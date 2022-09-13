@@ -10,7 +10,7 @@ import java.util.Scanner;
 //8, 153
 //10, 571
 //12, 2131
-//14, 7953
+//점화식을 찾아야함 f(x) = 4f(x-1) - f(x-2)
 public class No_39 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -18,18 +18,19 @@ public class No_39 {
     }
 
     public int solution(int n) {
-        int remain = n%2*2;
-        int num = n/2;
-        long[] arr = new long[num+1];
+        int mod = 1_000_000_007;
+        long[] arr = new long[n+1];
         arr[0] = 1;
-        arr[1] = 3;
-        for(int i=2; i<arr.length; i++){
-            arr[i] = (4L*arr[i-1] -arr[i-2])%1_000_000_007;
+        arr[2] = 3;
+        for(int i=4; i<arr.length; i+=2){
+            //모듈러의 분배법칙활용
+            arr[i] = ((4*arr[i-2]%mod)-(arr[i-4]%mod)+mod)%mod;
         }
-        for(long i : arr){
-            DecimalFormat df = new DecimalFormat("#,###");
-            System.out.println(df.format(i));
+
+        DecimalFormat df = new DecimalFormat("#,###");
+        for(int i=0; i<arr.length; i++){
+            System.out.println(i+" " + arr[i]);
         }
-        return (int)arr[num]+remain;
+        return (int)arr[n];
     }
 }
