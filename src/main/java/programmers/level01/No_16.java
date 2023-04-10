@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12915
  * 
- * ¿¬½À¹®Á¦ - ³» ¸¶À½´ë·Î Á¤·ÄÇÏ±â
+ * ì—°ìŠµë¬¸ì œ - ë‚´ ë§ˆìŒëŒ€ë¡œ ì •ë ¬í•˜ê¸°
  *
  */
 public class No_16 {
@@ -57,11 +57,11 @@ public class No_16 {
         return answer;
     }
 	
-	//ÀÎÅÍ³İ¿¡¼­ Ã£¾Æº» ¹®Á¦... »ı°¢ÇÏ´Â°Å ´ë¹Ú...
+	//ì¸í„°ë„·ì—ì„œ ì°¾ì•„ë³¸ ë¬¸ì œ... ìƒê°í•˜ëŠ”ê±° ëŒ€ë°•...
 	public String[] solution2(String[] strings, int n) {
         String[] answer = new String[strings.length];
         
-        // ArrayList »ç¿ë
+        // ArrayList ì‚¬ìš©
         ArrayList<String> array = new ArrayList<String>();
             
         for (int i=0; i<strings.length; i++) {
@@ -77,7 +77,7 @@ public class No_16 {
         return answer;
     }
 	
-	//Comparator ÀçÁ¤ÀÇÇÏ´Â ¹æ¹ı... ÀÌ°Ô Á¦ÀÏ Á¤¼®ÀÎ°Í°°±äÇÔ
+	//Comparator ì¬ì •ì˜í•˜ëŠ” ë°©ë²•... ì´ê²Œ ì œì¼ ì •ì„ì¸ê²ƒê°™ê¸´í•¨
 	public String[] solution3(String[] strings, int n) {
 	      Arrays.sort(strings, new Comparator<String>(){
 	          @Override

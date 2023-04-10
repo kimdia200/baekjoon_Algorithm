@@ -2,9 +2,9 @@ package programmers.level01;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12977
  * 
- * Summer/Winter Coding(~2018) ¼Ò¼ö¸¸µé±â
+ * Summer/Winter Coding(~2018) ì†Œìˆ˜ë§Œë“¤ê¸°
  * 
- * ´Ù¸¥»ç¶÷µéµµ ºñ½ÁÇÑ ¹æ½ÄÀ¸·Î Ç¬°Å°°À½!
+ * ë‹¤ë¥¸ì‚¬ëŒë“¤ë„ ë¹„ìŠ·í•œ ë°©ì‹ìœ¼ë¡œ í‘¼ê±°ê°™ìŒ!
  *
  */
 public class No_17 {

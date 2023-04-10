@@ -1,13 +1,13 @@
 package programmers.level01;
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/136798
-//ÄÚµùÅ×½ºÆ® ¿¬½À
-//¿¬½À¹®Á¦
-//±â»ç´Ü¿øÀÇ ¹«±â
+//ì½”ë”©í…ŒìŠ¤íŠ¸ ì—°ìŠµ
+//ì—°ìŠµë¬¸ì œ
+//ê¸°ì‚¬ë‹¨ì›ì˜ ë¬´ê¸°
 
-public class No_68_¾à¼ö {
+public class No_68_ì•½ìˆ˜ {
     public static void main(String[] args) {
-        System.out.println(new No_68_¾à¼ö().solution(10,3,2));
+        System.out.println(new No_68_ì•½ìˆ˜().solution(10,3,2));
     }
     public int solution(int number, int limit, int power) {
         int answer = 0;

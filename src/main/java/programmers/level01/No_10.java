@@ -2,9 +2,9 @@ package programmers.level01;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12903
  * 
- * °¡¿îµ¥ ±ÛÀÚ °¡Á®¿À±â
+ * ê°€ìš´ë° ê¸€ì ê°€ì ¸ì˜¤ê¸°
  * 
- * ÀÌ°Ç ³Ê¹« ½±Àİ¾Æ....
+ * ì´ê±´ ë„ˆë¬´ ì‰½ì–ì•„....
  *
  */
 public class No_10 {

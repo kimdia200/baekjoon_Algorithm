@@ -3,7 +3,7 @@ package programmers.level01;
  * 
  * https://programmers.co.kr/learn/courses/30/lessons/12912
  * 
- * ¿¬½À¹®Á¦ - µÎÁ¤¼ö »çÀÌÀÇ ÇÕ
+ * ì—°ìŠµë¬¸ì œ - ë‘ì •ìˆ˜ ì‚¬ì´ì˜ í•©
  *
  */
 public class No_15 {

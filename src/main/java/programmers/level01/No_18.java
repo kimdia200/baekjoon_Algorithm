@@ -4,7 +4,7 @@ import java.util.Arrays;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12982
  * 
- * Summer/Winter(~2018) ¿¹»ê
+ * Summer/Winter(~2018) ì˜ˆì‚°
  *
  */
 public class No_18 {

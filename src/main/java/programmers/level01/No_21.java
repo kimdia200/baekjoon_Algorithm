@@ -3,7 +3,7 @@ package programmers.level01;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12922
  * 
- * ¿¬½À¹®Á¦ - ¼ö¹Ú¼ö¹Ú¼ö¹Ú¼ö?
+ * ì—°ìŠµë¬¸ì œ - ìˆ˜ë°•ìˆ˜ë°•ìˆ˜ë°•ìˆ˜?
  *
  */
 public class No_21 {
@@ -13,8 +13,8 @@ public class No_21 {
 	public String solution(int n) {
 		StringBuilder sb = new StringBuilder();
 		for(int i=0; i<n; i++) {
-			if(i%2==0) sb.append("¼ö");
-			else sb.append("¹Ú");
+			if(i%2==0) sb.append("ìˆ˜");
+			else sb.append("ë°•");
 		}
 		return sb.toString();
     }

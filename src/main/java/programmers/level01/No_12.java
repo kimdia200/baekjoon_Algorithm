@@ -5,7 +5,7 @@ import java.util.GregorianCalendar;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12901
  * 
- * ¿¬½À¹®Á¦ - 2016³â
+ * ì—°ìŠµë¬¸ì œ - 2016ë…„
  *
  */
 public class No_12 {
@@ -16,10 +16,10 @@ public class No_12 {
 	}
 
 	public String solution(int a, int b) {
-		//Calendar¿¡¼­ month´Â 0~11 (1¿ù~12¿ù)
+		//Calendarì—ì„œ monthëŠ” 0~11 (1ì›”~12ì›”)
 		Calendar cal = new GregorianCalendar(2016, a-1, b);
 		
-		//Calendar¿¡¼­ DAY_OF_WEEK´Â 1~7(ÀÏ~Åä)
+		//Calendarì—ì„œ DAY_OF_WEEKëŠ” 1~7(ì¼~í† )
 		String[] arr = {"","SUN","MON","TUE","WED","THU","FRI","SAT"};
 		return arr[cal.get(Calendar.DAY_OF_WEEK)];
 	}

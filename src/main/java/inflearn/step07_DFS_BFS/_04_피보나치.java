@@ -2,11 +2,11 @@ package inflearn.step07_DFS_BFS;
 
 import java.util.Date;
 
-//n=45ÀÏ °æ¿ì µ¿ÀÛ½Ã°£ 7.6ÃÊ
-public class _04_ÇÇº¸³ªÄ¡ {
+//n=45ì¼ ê²½ìš° ë™ì‘ì‹œê°„ 7.6ì´ˆ
+public class _04_í”¼ë³´ë‚˜ì¹˜ {
     public static void main(String[] args) {
         long a = new Date().getTime();
-        _04_ÇÇº¸³ªÄ¡ t = new _04_ÇÇº¸³ªÄ¡();
+        _04_í”¼ë³´ë‚˜ì¹˜ t = new _04_í”¼ë³´ë‚˜ì¹˜();
         int n = 45;
         for(int i=1; i<=n; i++) System.out.print(t.dfs(i)+ " ");
         long b = new Date().getTime();

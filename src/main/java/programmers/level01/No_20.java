@@ -3,10 +3,10 @@ package programmers.level01;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12930#
  * 
- * �̻��� ���� �����
+ * 이상한 문자 만들기
  * 
- * ���� �ع� = �ܾ�� �ɰ��� �ܾ��� �۾� �ϳ��ϳ��� ���� = O(n^2)
- * �ٸ����Ǯ�� = �ƿ� ��¥�ϳ� �ϳ��� �ɰ��� ���鸶�� �ε��� �ʱ�ȭ ���� = O(n)
+ * 나의 해법 = 단어로 쪼개고 단어의 글씨 하나하나씩 들어가봄 = O(n^2)
+ * 다른사람풀이 = 아예 글짜하나 하나씩 쪼개고 공백마다 인덱스 초기화 접근 = O(n)
  *
  */
 public class No_20 {

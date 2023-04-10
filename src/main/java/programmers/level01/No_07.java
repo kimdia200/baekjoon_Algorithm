@@ -4,9 +4,9 @@ package programmers.level01;
  * 
  * https://programmers.co.kr/learn/courses/30/lessons/70128
  * 
- * ³»Àû
+ * ë‚´ì 
  * 
- * ¾Æ ÀÌ°Ç ¹¹¾ß...
+ * ì•„ ì´ê±´ ë­ì•¼...
  *
  */
 public class No_07 {

@@ -7,14 +7,14 @@ import java.util.List;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/12940
  *
- * ¿¬½À¹®Á¦ - ÃÖ´ë°ø¾à¼ö¿Í ÃÖ¼Ò°ø¹è¼ö
+ * ì—°ìŠµë¬¸ì œ - ìµœëŒ€ê³µì•½ìˆ˜ì™€ ìµœì†Œê³µë°°ìˆ˜
  */
 public class No_45 {
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(new No_45().solution(3,12)));
 	}
 	
-	// ´Ù¸¥»ç¶÷ÀÌ Ç¬°Í ´ë¹Ú....
+	// ë‹¤ë¥¸ì‚¬ëŒì´ í‘¼ê²ƒ ëŒ€ë°•....
 	public int[] gcdlcm(int a, int b) {
 		int[] answer = new int[2];
 
@@ -30,7 +30,7 @@ public class No_45 {
 	}
 	
 	
-	//³»°¡Ç¬°Å
+	//ë‚´ê°€í‘¼ê±°
 	public int[] solution(int n, int m) {
 		if(n==m) {
 			return new int[] {n,n};

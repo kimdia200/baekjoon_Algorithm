@@ -2,12 +2,12 @@ package inflearn.step07_DFS_BFS;
 
 import java.util.Date;
 
-//n=45ÀÏ °æ¿ì µ¿ÀÛ½Ã°£ 0.02ÃÊ
-//¸Þ¸ðÀÌÁ¦ÀÌ¼Ç(Memoization)
-//¸Þ¸ðÀÌÁ¦ÀÌ¼ÇÀº ÄÄÇ»ÅÍ ÇÁ·Î±×·¥ÀÌ µ¿ÀÏÇÑ °è»êÀ» ¹Ýº¹ÇØ¾ß ÇÒ ¶§,
-//ÀÌÀü¿¡ °è»êÇÑ °ªÀ» ¸Þ¸ð¸®¿¡ ÀúÀåÇÔÀ¸·Î½á µ¿ÀÏÇÑ °è»êÀÇ ¹Ýº¹ ¼öÇàÀ» Á¦°ÅÇÏ¿© ÇÁ·Î±×·¥ ½ÇÇà ¼Óµµ¸¦ ºü¸£°Ô ÇÏ´Â ±â¼úÀÌ´Ù.
-//µ¿Àû °èÈ¹¹ýÀÇ ÇÙ½ÉÀÌ µÇ´Â ±â¼úÀÌ´Ù. ¸Þ¸ðÀÌÁ¦ÀÌ¼ÇÀÌ¶ó°íµµ ÇÑ´Ù.
-public class _04_ÇÇº¸³ªÄ¡_¸Þ¸ðÀÌÁ¦ÀÌ¼Ç {
+//n=45ì¼ ê²½ìš° ë™ìž‘ì‹œê°„ 0.02ì´ˆ
+//ë©”ëª¨ì´ì œì´ì…˜(Memoization)
+//ë©”ëª¨ì´ì œì´ì…˜ì€ ì»´í“¨í„° í”„ë¡œê·¸ëž¨ì´ ë™ì¼í•œ ê³„ì‚°ì„ ë°˜ë³µí•´ì•¼ í•  ë•Œ,
+//ì´ì „ì— ê³„ì‚°í•œ ê°’ì„ ë©”ëª¨ë¦¬ì— ì €ìž¥í•¨ìœ¼ë¡œì¨ ë™ì¼í•œ ê³„ì‚°ì˜ ë°˜ë³µ ìˆ˜í–‰ì„ ì œê±°í•˜ì—¬ í”„ë¡œê·¸ëž¨ ì‹¤í–‰ ì†ë„ë¥¼ ë¹ ë¥´ê²Œ í•˜ëŠ” ê¸°ìˆ ì´ë‹¤.
+//ë™ì  ê³„íšë²•ì˜ í•µì‹¬ì´ ë˜ëŠ” ê¸°ìˆ ì´ë‹¤. ë©”ëª¨ì´ì œì´ì…˜ì´ë¼ê³ ë„ í•œë‹¤.
+public class _04_í”¼ë³´ë‚˜ì¹˜_ë©”ëª¨ì´ì œì´ì…˜ {
     static int[] arr;
     public static void main(String[] args) {
         long a = new Date().getTime();

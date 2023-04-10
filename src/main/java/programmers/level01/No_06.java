@@ -7,9 +7,9 @@ import java.util.List;
  * 
  * https://programmers.co.kr/learn/courses/30/lessons/64061
  * 
- * 2019 Ä«Ä«¿À°³¹ßÀÚ ÀÎÅÏ½±
+ * 2019 ì¹´ì¹´ì˜¤ê°œë°œì ì¸í„´ì‰½
  * 
- * Å©·¹ÀÎ ÀÎÇü»Ì±â °ÔÀÓ
+ * í¬ë ˆì¸ ì¸í˜•ë½‘ê¸° ê²Œì„
  *
  */
 public class No_06 {
@@ -29,7 +29,7 @@ public class No_06 {
 	public int solution(int[][] board, int[] moves) {
         int answer = 0;
         
-        //»Ì¾Æ¿Â ÀÎÇüÀ» ´ã¾ÆµÑ ¸®½ºÆ®°´Ã¼
+        //ë½‘ì•„ì˜¨ ì¸í˜•ì„ ë‹´ì•„ë‘˜ ë¦¬ìŠ¤íŠ¸ê°ì²´
         List<Integer> bucket = new ArrayList<>();
         
         for(int select : moves) {

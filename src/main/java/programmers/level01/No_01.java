@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 
-//¹®Á¦ : µÎ°³ »Ì¾Æ ´õÇÏ±â
+//ë¬¸ì œ : ë‘ê°œ ë½‘ì•„ ë”í•˜ê¸°
 //url : https://programmers.co.kr/learn/courses/30/lessons/68644
 public class No_01 {
 

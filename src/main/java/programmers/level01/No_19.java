@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/42889
  * 
- * 2019 KAKAO BLIND RECRUITMENT - ½ÇÆÐÀ²
+ * 2019 KAKAO BLIND RECRUITMENT - ì‹¤íŒ¨ìœ¨
  *
  */
 public class No_19 {

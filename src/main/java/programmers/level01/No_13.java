@@ -2,7 +2,7 @@ package programmers.level01;
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/76501
  * 
- * ¿ù°£ ÄÚµåÃ§¸°Áö À½¾ç ´õÇÏ±â
+ * ì›”ê°„ ì½”ë“œì±Œë¦°ì§€ ìŒì–‘ ë”í•˜ê¸°
  *
  */
 public class No_13 {
