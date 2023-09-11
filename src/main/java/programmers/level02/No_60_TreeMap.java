@@ -41,7 +41,6 @@ class Solution {
             //4. answer 입력
             answer[idx++] = map.get(key);
         }
-
         return answer;
     }
     public int chgMin(String time, String option) {
