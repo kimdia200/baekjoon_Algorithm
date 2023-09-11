@@ -1,5 +1,6 @@
 package programmers.level02;
-
+//https://school.programmers.co.kr/learn/courses/30/lessons/17687
+//코딩테스트 연습 2018 KAKAO BLIND RECRUITMENT [3차] n진수 게임
 public class No_58 {
     public static void main(String[] args) {
         System.out.println(new No_58().solution(16, 16, 2, 2));
